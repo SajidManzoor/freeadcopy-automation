@@ -24,7 +24,7 @@
   },
   "devDependencies": {
     "@cypress/browserify-preprocessor": "^3.0.2",
-    "cypress": "^13.6.6",
+    "cypress": "^13.7.0",
     "multiple-cucumber-html-reporter": "^3.6.2"
   }
 }
