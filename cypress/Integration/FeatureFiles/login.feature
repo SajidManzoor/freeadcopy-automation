@@ -5,7 +5,7 @@ Feature: Login process
   Scenario: User is able to login with registered email.
     Given open the website and navigate to LoginPage.
     When Enter email and password
-    And Click on signin button
+    When Click on signin button
     Then logged in successfully
 
   Scenario: User unable to login with unregistered email.

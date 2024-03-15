@@ -15,7 +15,8 @@ workflows:
           # Starts web server for E2E tests - replace with your own server invocation
           # https://docs.cypress.io/guides/continuous-integration/introduction#Boot-your-server
           # start-command: 'npm start'
-          cypress-command: "npx cypress run --record --parallel"
+          # cypress-command: "npx cypress run --record --parallel"
+          cypress-command: "npx cypress run"
   nightly:
     triggers:
       - schedule:
@@ -34,4 +35,5 @@ workflows:
           # Starts web server for E2E tests - replace with your own server invocation
           # https://docs.cypress.io/guides/continuous-integration/introduction#Boot-your-server
           # start-command: 'npm start'
-          cypress-command: "npx cypress run --record --parallel"
+          # cypress-command: "npx cypress run --record --parallel"
+          cypress-command: "npx cypress run"

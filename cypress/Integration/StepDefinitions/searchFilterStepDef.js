@@ -21,7 +21,7 @@ When(/^Login to app and click on the searchfield from header.$/, function () {
 
 
 //Email tag
-When(/^Select Email tag and type template name.$/, () => {	
+When(/^Select Email tag and type template name.$/, () => {
 	dashboard.clickSearchTemplate()
 	searchPopup.selectEmailTag()
 	searchPopup.enterTemplateName()
@@ -95,20 +95,115 @@ Then(/^Select Advertorial template from matching result and verify it.$/, () => 
 
 
 
+// /* ==== Generated with Cypress Studio ==== */
+// cy.get('.text-\\[16px\\]').click();
+// cy.get('#email').click();
+// cy.get('#email').clear('sajidmanzoor50@gmail.com');
+// cy.get('#email').type('sajidmanzoor50@gmail.com');
+// cy.get('#password').clear('w');
+// cy.get('#password').type('webdir123');
+// cy.get('.md\\:space-y-4 > .inline-flex').click();
+// cy.get('#password').clear('w');
+// cy.get('#password').type('webdir123R');
+// cy.get('.md\\:space-y-4 > .inline-flex').click();
+// cy.get('.ml-5 > .relative > .bg-gray-50').click();
+// cy.get('.flex-wrap > .text-\\[\\#52AA8A\\]').click();
+// cy.get('#simple-search').click();
+// cy.get('.mx-2 > :nth-child(1) > .cursor-pointer > .flex').click();
+// cy.get('.ml-5 > .relative > .bg-gray-50').click();
+// cy.get('#simple-search').clear('A');
+// cy.get('#simple-search').type('AB Checkout - Last Chance Checkout');
+// cy.get('.px-1 > .cursor-pointer > .flex').click();
+// cy.get('.ml-5 > .relative > .bg-gray-50').click();
+// cy.get('.text-\\[\\#77b9e8\\]').click();
+// cy.get('#simple-search').clear('B');
+// cy.get('#simple-search').type('Belief Changer');
+// cy.get('.px-1 > .cursor-pointer > .flex').click();
+// cy.get('.ml-5 > .relative > .bg-gray-50').click();
+// cy.get('.text-\\[\\#F05454\\]').click();
+// cy.get('#simple-search').clear('P');
+// cy.get('#simple-search').type('Permission To Skip');
+// cy.get('.px-1 > .cursor-pointer > .flex').click();
+// cy.get('.ml-5 > .relative > .bg-gray-50').click();
+// cy.get('.text-\\[\\#610C9F\\]').click();
+// cy.get('#simple-search').clear('H');
+// cy.get('#simple-search').type('Halbert Headline Generator');
+// cy.get('.px-1 > .cursor-pointer > .flex').click();
+// cy.get('.ml-5 > .relative > .bg-gray-50').click();
+// cy.get('.text-\\[\\#7D8CC4\\]').click();
+// cy.get('#simple-search').clear('B');
+// cy.get('#simple-search').type('Build A Better Buyer');
+// cy.get('.px-1 > .cursor-pointer > .flex').click();
+// cy.get('.ml-5 > .relative > .bg-gray-50').click();
+// cy.get('.text-\\[\\#BED754\\]').click();
+// cy.get('#simple-search').clear('A');
+// cy.get('#simple-search').type('Advertorial Jump Page');
+// cy.get('.px-1 > .cursor-pointer > .flex').click();
+// /* ==== End Cypress Studio ==== */
 
 
+// describe.only('Search Popup', () => {
 
-/*describe.only('Search Popup', () => {
+// 	it.only('Search Template', function () {
+// 		/* ==== Generated with Cypress Studio ==== */
+// 		// cy.get('.text-\\[16px\\]').click();
+// 		// cy.get('#email').click();
+// 		// cy.get('#email').clear('sajidmanzoor50@gmail.com');
+// 		// cy.get('#email').type('sajidmanzoor50@gmail.com');
+// 		// cy.get('#password').clear('w');
+// 		// cy.get('#password').type('webdir123');
+// 		// cy.get('.md\\:space-y-4 > .inline-flex').click();
+// 		// cy.get('#password').clear('w');
+// 		// cy.get('#password').type('webdir123R');
+// 		// cy.get('.md\\:space-y-4 > .inline-flex').click();
+// 		// cy.get('.ml-5 > .relative > .bg-gray-50').click();
+// 		// cy.get('.flex-wrap > .text-\\[\\#52AA8A\\]').click();
 
-		it.only('Search Template', function() {
-				homepage.navigationToLogin()
-	loginpage.enterEmail(this.regData[0].UserEmail)
-	loginpage.enterPassword(this.regData[0].Password)
-	loginpage.signinBtn()
-	dashboard.searchTemplate()
-	searchPopup.selectEmailTag()
-	searchPopup.enterTemplateName()
-	dashboard.selectMatchingResult()
-	dashboard.verifyTemplate()	
-		})
-})*/
+// 		homepage.navigationToLogin()
+// 		loginpage.enterEmail(this.regData[0].UserEmail)
+// 		loginpage.enterPassword(this.regData[0].Password)
+// 		loginpage.signinBtn()
+
+// 		// cy.get('.flex-wrap > .text-\\[\\#52AA8A\\]').click();
+// 		cy.get('.ml-5 > .relative > .bg-gray-50').click();
+// 		cy.get('#simple-search').click();
+// 		cy.get('.mx-2 > :nth-child(1) > .cursor-pointer > .flex').click();
+// 		cy.get('.ml-5 > .relative > .bg-gray-50').click();
+// 		cy.get('#simple-search').clear('A');
+// 		cy.get('#simple-search').type('AB Checkout - Last Chance Checkout');
+// 		let firstElement = cy.get('.px-1 > .cursor-pointer > .flex').first()
+// 		// cy.get('.px-1 > .cursor-pointer > .flex').click();
+// 		firstElement.click()
+// 		cy.get('.ml-5 > .relative > .bg-gray-50').click();
+// 		cy.get('.text-\\[\\#77b9e8\\]').click();
+// 		// cy.get('#simple-search').clear('B');
+// 		cy.get('#simple-search').type('Belief Changer');
+// 		// cy.get('.px-1 > .cursor-pointer > .flex').click();
+// 		firstElement.click()
+// 		cy.get('.ml-5 > .relative > .bg-gray-50').click();
+// 		cy.get('.text-\\[\\#F05454\\]').click();
+// 		// cy.get('#simple-search').clear('P');
+// 		cy.get('#simple-search').type('Permission To Skip');
+// 		// cy.get('.px-1 > .cursor-pointer > .flex').click();
+// 		firstElement.click()
+// 		cy.get('.ml-5 > .relative > .bg-gray-50').click();
+// 		cy.get('.text-\\[\\#610C9F\\]').click();
+// 		// cy.get('#simple-search').clear('H');
+// 		cy.get('#simple-search').type('Halbert Headline Generator');
+// 		// cy.get('.px-1 > .cursor-pointer > .flex').click();
+// 		firstElement.click()
+// 		cy.get('.ml-5 > .relative > .bg-gray-50').click();
+// 		cy.get('.text-\\[\\#7D8CC4\\]').click();
+// 		// cy.get('#simple-search').clear('B');
+// 		cy.get('#simple-search').type('Build A Better Buyer');
+// 		// cy.get('.px-1 > .cursor-pointer > .flex').click();
+// 		firstElement.click()
+// 		cy.get('.ml-5 > .relative > .bg-gray-50').click();
+// 		cy.get('.text-\\[\\#BED754\\]').click();
+// 		// cy.get('#simple-search').clear('A');
+// 		cy.get('#simple-search').type('Advertorial Jump Page');
+// 		cy.get('.px-1 > .cursor-pointer > .flex').click();
+// 		firstElement.click()
+// 		/* ==== End Cypress Studio ==== */
+// 	})
+// })
