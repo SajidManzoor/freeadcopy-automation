@@ -2,11 +2,9 @@
 import { Given, Then, When } from "@badeball/cypress-cucumber-preprocessor";
 import homePageMethods from "../../PageObjects/PageMethods/homePageMethods";
 import loginPageMethods from "../../PageObjects/PageMethods/loginPageMethods";
-import utilities from "../utilities";
 
 const homepage = new homePageMethods()
 const loginpage = new loginPageMethods()
-const utils = new utilities()
 
 //Scenario: User able to login with registered email and password.
 Given(/^open the website and navigate to LoginPage.$/, function () {
