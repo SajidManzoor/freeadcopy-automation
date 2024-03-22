@@ -32,3 +32,4 @@ jobs:
           SLACK_USERNAME: sajid
           SLACK_TITLE: Build Status ${{ job.status }}
           SLACK_COLOR: ${{ job.status }}
+          SLACK_FOOTER: Production Environment
