@@ -154,7 +154,7 @@ export default class dashBoardMethods {
             .should('have.prop', 'paused', false)
             .and('have.prop', 'ended', false)
     }
-    clickSearchTemplate() {
+    searchTemplate() {
         dashBoardElement.element.search_bar().click()
 
     }
